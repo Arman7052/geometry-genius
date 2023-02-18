@@ -15,7 +15,7 @@ function getRandomColor() {
     return color;
 }
 
-//Function for Area of Triangle 
+//Function for Area of Triangle  with validation
 
 const calculateBtn = document.getElementById('calculate');
 const baseInput = document.getElementById('base');
@@ -35,15 +35,27 @@ calculateBtn.addEventListener('click', function() {
     resultDiv.innerText = `The area of the triangle is ${area}`;
   }
 });
-//   Area of Rectangle 
-function rectangle() {
-    let length = document.getElementById("length").value;
-    let width = document.getElementById("width").value;
 
-    let area = length * width;
 
-    document.getElementById("result").innerHTML = `The area of rectangle is ${area}.`;
-}
+
+//   Area of Rectangle with validation
+
+
+const widthInput = document.getElementById('width-rectangle');
+const lengthInput = document.getElementById('length-rectangle');
+const calculateButton = document.getElementById('calculaterectangle');
+const resultElement = document.getElementById('result');
+calculateButton.addEventListener('click', () => {
+  const length = lengthInput.value;
+  const width = widthInput.value;
+  if (length <= 0 || width <= 0 || isNaN(length) || isNaN(width)) {
+    resultElement.textContent = 'Invalid input. Please enter positive numbers.';
+    return;
+  }
+
+  const area = length * width;
+  resultElement.textContent = `The area of the rectangle is ${area}.`;
+});
 
 
 
