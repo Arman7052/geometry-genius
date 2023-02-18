@@ -51,6 +51,15 @@ function rhombus() {
     document.getElementById("result").innerHTML = `The area of rhombus is ${area}.`
 }
 
+// Area of pentagon 
+
+function pentagon() {
+    let p = document.getElementById("p").value;
+    let b = document.getElementById("b").value;
+    let area = 0.5 * p * b;
+    document.getElementById("result").innerHTML = `The area of pentagon is ${area}.`
+}
+
 
 
 
