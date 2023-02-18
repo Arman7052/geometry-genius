@@ -1,0 +1,10 @@
+.text {
+    text-align: center;
+}
+
+.p-text {
+    text-align: start;
+}
+p {
+  color: rgb(110, 104, 104);
+}
