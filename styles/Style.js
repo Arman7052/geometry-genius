@@ -23,6 +23,16 @@ let cells = document.getElementsByClassName('grid-item');
             const area = (base * height) / 2;
             document.getElementById("result").innerHTML = `The area of triangle is ${area}.`;
           }
+          //   Area of Rectangle 
+        function rectangle() {
+            const length = document.getElementById("length").value;
+            const width = document.getElementById("width").value;
+          
+            const area = length * width;
+          
+            document.getElementById("result").innerHTML = `The area of rectangle is ${area}.`;
+          }
+
           
 
         
