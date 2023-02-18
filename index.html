@@ -38,7 +38,7 @@
                                 <input class="w-20 bg-slate-200	rounded-sm " type="" name="" id="height" placeholder="  h"><span class="text-slate-500">cm</span>
                                
                             </div>
-                           <div><button onclick="triangleArea()"   class="bg-sky-700  w-48 my-10 px-8 py-2 text-white rounded-lg font-light sm:px-4 sm:py-1">Calculate</button></div>
+                           <div><button onclick="triangle()"   class="bg-sky-700  w-48 my-10 px-8 py-2 text-white rounded-lg font-light sm:px-4 sm:py-1">Calculate</button></div>
                         </div>
 
                     </div>
@@ -49,11 +49,11 @@
                             <h1 class="font-bold text-black mt-12">Rectangle</h1>
                             <p class="text-xs font-semibold text-slate-500	mt-2.5	">Area (A) = w <span>&#215;</span> I</p>
                             <div class="flex gap-2 mt-2.5 justify-center	">
-                                <input class="w-20 bg-slate-200	rounded-sm " type="" name="" id="" placeholder="  W"><span class="text-slate-500">cm</span>
-                                <input class="w-20 bg-slate-200	rounded-sm " type="" name="" id="" placeholder="  I"><span class="text-slate-500">cm</span>
+                                <input class="w-20 bg-slate-200	rounded-sm " type="" name="" id="width" placeholder="  W"><span class="text-slate-500">cm</span>
+                                <input class="w-20 bg-slate-200	rounded-sm " type="" name="" id="length" placeholder="  I"><span class="text-slate-500">cm</span>
                                
                             </div>
-                            <div><button class="bg-sky-700  w-48 my-10 px-8 py-2 text-white rounded-lg font-light sm:px-4 sm:py-1"  >Calculate</button></div>
+                            <div><button onclick="rectangle()" class="bg-sky-700  w-48 my-10 px-8 py-2 text-white rounded-lg font-light sm:px-4 sm:py-1"  >Calculate</button></div>
                         </div>
 
                     </div>
@@ -63,14 +63,21 @@
                         <div>
                             <h1 class="font-bold text-black mt-12">Parallelogram</h1>
                             <p class="text-xs font-semibold text-slate-500	mt-2.5	">Area (A) = b <span>&#215;</span> h</p>
-                            <p class="text-slate-500	mt-2.5">b=10cm, h=12cm</p>
-                            <div><button class="bg-sky-700  w-48 my-10 px-8 py-2 text-white rounded-lg font-light sm:px-4 sm:py-1">Calculate</button></div>
+                            <!-- <p class="text-slate-500	mt-2.5">b=10cm, h=12cm</p> -->
+                            <div class="flex gap-2 mt-2.5 justify-center	">
+                                <input class="w-20 bg-slate-200	rounded-sm " type="" name="" id="width" placeholder="  b"><span class="text-slate-500">cm</span>
+                                <input class="w-20 bg-slate-200	rounded-sm " type="" name="" id="length" placeholder="  h"><span class="text-slate-500">cm</span>
+                                
+                            </div>
+                            <div><button onclick="calculateArea2()" class="bg-sky-700  w-48 my-10 px-8 py-2 text-white rounded-lg font-light sm:px-4 sm:py-1">Calculate</button></div>
                         </div>
 
                     </div>
                 </div>
-                <div class="result border-solid	border-2 rounded-lg mb-10" id="result"> 
+                <div class="border-solid	border-2 rounded-lg mb-10"> 
                     <h3 class=" underline underline-offset-8 font-bold">Area Calculation</h3>
+
+                    <p class="result "  id="result"></p>
 
 
                 </div>
@@ -79,7 +86,13 @@
                         <div>
                             <h1 class="font-bold text-black mt-12">Rhombus</h1>
                             <p class="text-xs font-semibold text-slate-500	mt-2.5	">Area (A) =0.5 <span>&#215;</span> d<sub>1</sub> <span>&#215;</span> d<sub>2</sub> </p>
+
                             <p class="text-slate-500	mt-2.5">d<sub>1</sub> =16cm,  d<sub>2</sub>=8cm </p>
+                            <div class="flex gap-2 mt-2.5 justify-center	">
+                                <input class="w-20 bg-slate-200	rounded-sm " type="" name="" id="base" placeholder="  b"><span class="text-slate-500">cm</span>
+                                <input class="w-20 bg-slate-200	rounded-sm " type="" name="" id="height" placeholder="  h"><span class="text-slate-500">cm</span>
+                               
+                            </div>
                             <div><button class="bg-sky-700  w-48 my-10 px-8 py-2 text-white rounded-lg font-light sm:px-4 sm:py-1">Calculate</button></div>
                         </div>
 
@@ -91,6 +104,11 @@
                             <h1 class="font-bold text-black mt-12">Pentagon</h1>
                             <p class="text-xs font-semibold text-slate-500	mt-2.5	">Area (A) =  0.5 <span>&#215;</span> p <span>&#215;</span> b</p>
                             <p class="text-slate-500	mt-2.5	">p = 6cm, b = 10cm</p>
+                            <div class="flex gap-2 mt-2.5 justify-center	">
+                                <input class="w-20 bg-slate-200	rounded-sm " type="" name="" id="base" placeholder="  b"><span class="text-slate-500">cm</span>
+                                <input class="w-20 bg-slate-200	rounded-sm " type="" name="" id="height" placeholder="  h"><span class="text-slate-500">cm</span>
+                               
+                            </div>
                             <div><button class="bg-sky-700  w-48 my-10 px-8 py-2 text-white rounded-lg font-light sm:px-4 sm:py-1">Calculate</button></div>
                         </div>
 
@@ -102,6 +120,11 @@
                             <h1 class="font-bold text-black mt-12">Ellipse</h1>
                             <p class="text-xs font-semibold text-slate-500	mt-2.5	">Area (A) = <span class="text-base	">&#960;</span>ab</p>
                             <p class="text-slate-500	mt-2.5	">a = 10cm, b = 4cm</p>
+                            <div class="flex gap-2 mt-2.5 justify-center	">
+                                <input class="w-20 bg-slate-200	rounded-sm " type="" name="" id="base" placeholder="  b"><span class="text-slate-500">cm</span>
+                                <input class="w-20 bg-slate-200	rounded-sm " type="" name="" id="height" placeholder="  h"><span class="text-slate-500">cm</span>
+                               
+                            </div>
                             <div><button class="bg-sky-700  w-48 my-10 px-8 py-2 text-white rounded-lg font-light sm:px-4 sm:py-1">Calculate</button></div>
                         </div>
 

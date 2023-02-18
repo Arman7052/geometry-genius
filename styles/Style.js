@@ -15,13 +15,18 @@ let cells = document.getElementsByClassName('grid-item');
             return color;
         }
 
-        // // Area of Triangle 
+        //Function for Area of Triangle and pentagon 
+
+        function triangle() {
+            const base = document.getElementById("base").value;
+            const height = document.getElementById("height").value;
+            const area = (base * height) / 2;
+            document.getElementById("result").innerHTML = `The area of triangle is ${area}.`;
+          }
+          
+
+        
+
+          
        
-        // function triangleArea() {
-        //     let base = document.getElementById('base').value;
-        //     let height = document.getElementById('height').value;
-        //     let area = (base * height) / 2;
-        //     document.getElementById('result').innerHTML = "The area of the triangle is: " + area;
-        // }
-  
-    
+        
