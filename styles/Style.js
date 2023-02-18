@@ -15,26 +15,38 @@ function getRandomColor() {
     return color;
 }
 
-//Function for Area of Triangle and pentagon 
+//Function for Area of Triangle 
 
-function triangle() {
-    const base = document.getElementById("base").value;
-    const height = document.getElementById("height").value;
-    const area = (base * height) / 2;
-    document.getElementById("result").innerHTML = `The area of triangle is ${area}.`;
-}
+const calculateBtn = document.getElementById('calculate');
+const baseInput = document.getElementById('base');
+const heightInput = document.getElementById('height');
+const resultDiv = document.getElementById('result');
+
+calculateBtn.addEventListener('click', function() {
+  const base = parseFloat(baseInput.value);
+  const height = parseFloat(heightInput.value);
+
+  if (isNaN(base) || isNaN(height)) {
+    resultDiv.innerText = 'Please enter number';
+  } else if (base < 0 || height < 0) {
+    resultDiv.innerText = 'Numbers cannot be negative';
+  } else {
+    const area = 0.5 * base * height;
+    resultDiv.innerText = `The area of the triangle is ${area}`;
+  }
+});
 //   Area of Rectangle 
 function rectangle() {
-    const length = document.getElementById("length").value;
-    const width = document.getElementById("width").value;
+    let length = document.getElementById("length").value;
+    let width = document.getElementById("width").value;
 
-    const area = length * width;
+    let area = length * width;
 
     document.getElementById("result").innerHTML = `The area of rectangle is ${area}.`;
 }
 
 
-  
+
 // Area of rhombus 
 
 function rhombus() {
@@ -47,9 +59,9 @@ function rhombus() {
 // Area of pentagon 
 
 function pentagon() {
-    let p = document.getElementById("p").value;
-    let b = document.getElementById("b").value;
-    let area = 0.5 * p * b;
+    let d1 = document.getElementById("basePentagon").value;
+    let d2 = document.getElementById("heightPentagon").value;
+    let area = 0.5 * d1 * d2;
     document.getElementById("result").innerHTML = `The area of pentagon is ${area}.`
 }
 
@@ -57,13 +69,27 @@ function pentagon() {
 //   Area of Parallelogram 
 
 function parallelogram() {
-    const base = document.getElementById("basee").value;
-    const height = document.getElementById("heightt").value;
-    const area = base * height;
+    let base = document.getElementById("basee").value;
+    let height = document.getElementById("heightt").value;
+    let area = base * height;
     document.getElementById("result").innerHTML = `The area of parallelogram is ${area}.`;
+}
+
+
+// Area of ellipse 
+
+function ellipse() {
+    let a = parseFloat(document.getElementById("a").value);
+    let b = parseFloat(document.getElementById("b").value);
+    let pi = Math.PI;
+    let area = pi * a * b;
+    document.getElementById("result").innerHTML = `The area of ellipse is ${area}.`;
 }
 
 
 
 
 
+
+
+  

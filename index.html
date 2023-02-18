@@ -28,8 +28,12 @@
     <main>
         <section class="container px-12">
             <div class="grid sm:grid-cols-1 lg:grid-cols-4 gap-6 mt-14 text-center">
+                
+                        <!--             Triangle Area            -->
+
                 <div class=" grid-item border-solid	border-2 rounded-lg ">
                     <div class="mt-12 mx-24"><img class="h-24"  src="./images/triangle.png" alt="">
+
                         <div>
                             <h1 class="font-bold text-black mt-12">Triangle</h1>
                             <p class="text-xs font-semibold text-slate-500	mt-2.5	">Area (A) = 0.5  <span>&#215;</span>   b <span>&#215;</span> h</p>
@@ -38,11 +42,14 @@
                                 <input class="w-20 bg-slate-200	rounded-sm " type="" name="" id="height" placeholder="  h"><span class="text-slate-500">cm</span>
                                
                             </div>
-                           <div><button onclick="triangle()"   class="bg-sky-700  w-48 my-10 px-8 py-2 text-white rounded-lg font-light sm:px-4 sm:py-1">Calculate</button></div>
+                           <div><button id="calculate" class="bg-sky-700  w-48 my-10 px-8 py-2 text-white rounded-lg font-light sm:px-4 sm:py-1">Calculate</button></div>
                         </div>
 
                     </div>
                 </div>
+
+                <!--             Rectangle Area           -->
+
                 <div class=" grid-item border-solid	border-2 rounded-lg	">
                     <div class="mt-12 mx-24"><img src="./images/rectangle.png" alt="">
                         <div>
@@ -58,6 +65,9 @@
 
                     </div>
                 </div>
+
+                <!--               Parallelogram Area           -->
+
                 <div class=" grid-item border-solid	border-2 rounded-lg	">
                     <div class="mt-12 mx-24"><img src="./images/parallelogram.png" alt="">
                         <div>
@@ -74,6 +84,9 @@
 
                     </div>
                 </div>
+
+                <!--               Calculation result          -->
+
                 <div class="border-solid	border-2 rounded-lg mb-10"> 
                     <h3 class=" underline underline-offset-8 font-bold">Area Calculation</h3>
 
@@ -81,6 +94,9 @@
 
 
                 </div>
+
+                <!--            Rhombus Area          -->
+
                 <div class=" grid-item border-solid	border-2 rounded-lg	">
                     <div class="mt-12 mx-24"><img src="./images/rhombus.png" alt="">
                         <div>
@@ -98,6 +114,9 @@
 
                     </div>
                 </div>
+
+                <!--                  Pentagon Area              -->
+
                 <div class=" grid-item border-solid	border-2 rounded-lg	">
                     <div class="mt-12 mx-24	"><img class="h-28	" src="./images/pentagon.png" alt="">
                         <div>
@@ -105,15 +124,19 @@
                             <p class="text-xs font-semibold text-slate-500	mt-2.5	">Area (A) =  0.5 <span>&#215;</span> p <span>&#215;</span> b</p>
                             <p class="text-slate-500	mt-2.5	">p = 6cm, b = 10cm</p>
                             <div class="flex gap-2 mt-2.5 justify-center	">
-                                <input class="w-20 bg-slate-200	rounded-sm " type="" name="" id="p" placeholder="  p"><span class="text-slate-500">cm</span>
-                                <input class="w-20 bg-slate-200	rounded-sm " type="" name="" id="b" placeholder="  b"><span class="text-slate-500">cm</span>
+                                <input class="w-20 bg-slate-200	rounded-sm " type="" name="" id="basePentagon" placeholder="  p"><span class="text-slate-500">cm</span>
+                                <input class="w-20 bg-slate-200	rounded-sm " type="" name="" id="heightPentagon" placeholder="  b"><span class="text-slate-500">cm</span>
                                
                             </div>
-                            <div><button onclick="pentagon()" class="bg-sky-700  w-48 my-10 px-8 py-2 text-white rounded-lg font-light sm:px-4 sm:py-1">Calculate</button></div>
+                            <div><button  onclick="pentagon()"  class="bg-sky-700  w-48 my-10 px-8 py-2 text-white rounded-lg font-light sm:px-4 sm:py-1">Calculate</button></div>
                         </div>
 
                     </div>
                 </div>
+
+                <!--                   Ellipse Area              -->
+
+
                 <div class=" grid-item border-solid	border-2 rounded-lg	">
                     <div class="mt-12 mx-24"><img class="h-28" src="./images/ellipse.png" alt="">
                         <div>
@@ -121,11 +144,11 @@
                             <p class="text-xs font-semibold text-slate-500	mt-2.5	">Area (A) = <span class="text-base	">&#960;</span>ab</p>
                             <p class="text-slate-500	mt-2.5	">a = 10cm, b = 4cm</p>
                             <div class="flex gap-2 mt-2.5 justify-center	">
-                                <input class="w-20 bg-slate-200	rounded-sm " type="" name="" id="base" placeholder="  b"><span class="text-slate-500">cm</span>
-                                <input class="w-20 bg-slate-200	rounded-sm " type="" name="" id="height" placeholder="  h"><span class="text-slate-500">cm</span>
+                                <input class="w-20 bg-slate-200	rounded-sm " type="" name="" id="a" placeholder="  a"><span class="text-slate-500">cm</span>
+                                <input class="w-20 bg-slate-200	rounded-sm " type="" name="" id="b" placeholder="  b"><span class="text-slate-500">cm</span>
                                
                             </div>
-                            <div><button class="bg-sky-700  w-48 my-10 px-8 py-2 text-white rounded-lg font-light sm:px-4 sm:py-1">Calculate</button></div>
+                            <div><button onclick="ellipse()" class="bg-sky-700  w-48 my-10 px-8 py-2 text-white rounded-lg font-light sm:px-4 sm:py-1">Calculate</button></div>
                         </div>
 
                     </div>
