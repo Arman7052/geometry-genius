@@ -99,6 +99,12 @@ function ellipse() {
 }
 
 
+// open blog page 
+
+const blogButton = document.getElementById('blogButton');
+blogButton.addEventListener('click', function () {
+  window.location.href = 'blog.html';
+});
 
 
 
