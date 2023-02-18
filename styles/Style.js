@@ -33,14 +33,7 @@ function rectangle() {
     document.getElementById("result").innerHTML = `The area of rectangle is ${area}.`;
 }
 
-//   Area of Parallelogram 
 
-function parallelogram() {
-    const base = document.getElementById("basee").value;
-    const height = document.getElementById("heightt").value;
-    const area = base * height;
-    document.getElementById("result").innerHTML = `The area of parallelogram is ${area}.`;
-}
   
 // Area of rhombus 
 
@@ -61,7 +54,14 @@ function pentagon() {
 }
 
 
+//   Area of Parallelogram 
 
+function parallelogram() {
+    const base = document.getElementById("basee").value;
+    const height = document.getElementById("heightt").value;
+    const area = base * height;
+    document.getElementById("result").innerHTML = `The area of parallelogram is ${area}.`;
+}
 
 
 
